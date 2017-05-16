@@ -9,6 +9,8 @@
 import UIKit
 
 class IngredientsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var availableIngredients: [String] = ["Apples", "Bread", "cheese", "wheat", "flour", "food", "crumbs", "water", "olive oil", "canola oil", "garlic", "onions", "Yummy"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +23,19 @@ class IngredientsViewController: UIViewController, UITableViewDelegate, UITableV
         // Dispose of any resources that can be recreated.
     }
     
+    // Will return number of rows in the table view.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return(availableIngredients.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        
+        // Create a cell
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "ingCell")
+        // Populate the text label of that cell with the text in the availableIngredients list
+        cell.textLabel?.text = availableIngredients[indexPath.row]
+        
+        return(cell)
     }
     
 
