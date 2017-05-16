@@ -2,13 +2,13 @@
 //  IngredientsViewController.swift
 //  FoodWiz
 //
-//  Created by Petar Ojdrovic on 5/11/17.
+//  Created by Petar Ojdrovic on 5/16/17.
 //  Copyright © 2017 Petar Ojdrovic. All rights reserved.
 //
 
 import UIKit
 
-class IngredientsViewController: UIViewController {
+class IngredientsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,14 @@ class IngredientsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
     }
     
 

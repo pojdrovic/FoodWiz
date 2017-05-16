@@ -12,14 +12,12 @@
 		3F48A1F81EC4CE8C00F6F926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F48A1F71EC4CE8C00F6F926 /* Assets.xcassets */; };
 		3F48A1FB1EC4CE8C00F6F926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F48A1F91EC4CE8C00F6F926 /* LaunchScreen.storyboard */; };
 		3F6D4A011EC4D78300DCE8E1 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A001EC4D78300DCE8E1 /* RecipesViewController.swift */; };
-		3F6D4A031EC4D7BF00DCE8E1 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A021EC4D7BF00DCE8E1 /* IngredientsViewController.swift */; };
 		3F6D4A071EC4D81500DCE8E1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A061EC4D81500DCE8E1 /* SettingsViewController.swift */; };
 		3F6D4A0B1EC4D88300DCE8E1 /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A0A1EC4D88300DCE8E1 /* SuggestionsViewController.swift */; };
 		3F6D4A0D1EC4D90000DCE8E1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A0C1EC4D90000DCE8E1 /* ProfileViewController.swift */; };
 		3F6D4A101EC4EF3000DCE8E1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6D4A0F1EC4EF3000DCE8E1 /* libsqlite3.tbd */; };
 		3F6D4A141EC4EFAD00DCE8E1 /* dbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A131EC4EFAD00DCE8E1 /* dbManager.swift */; };
-		3F6D4A161EC62A9B00DCE8E1 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A151EC62A9B00DCE8E1 /* SearchTextField.swift */; };
-		3F6D4A181EC634B000DCE8E1 /* AutoCompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A171EC634B000DCE8E1 /* AutoCompleteTextField.swift */; };
+		3F6D4A1A1ECB692700DCE8E1 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A191ECB692700DCE8E1 /* IngredientsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +28,12 @@
 		3F48A1FA1EC4CE8C00F6F926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F48A1FC1EC4CE8C00F6F926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F6D4A001EC4D78300DCE8E1 /* RecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
-		3F6D4A021EC4D7BF00DCE8E1 /* IngredientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 		3F6D4A061EC4D81500DCE8E1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3F6D4A0A1EC4D88300DCE8E1 /* SuggestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
 		3F6D4A0C1EC4D90000DCE8E1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3F6D4A0F1EC4EF3000DCE8E1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		3F6D4A131EC4EFAD00DCE8E1 /* dbManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dbManager.swift; sourceTree = "<group>"; };
-		3F6D4A151EC62A9B00DCE8E1 /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
-		3F6D4A171EC634B000DCE8E1 /* AutoCompleteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCompleteTextField.swift; sourceTree = "<group>"; };
+		3F6D4A191ECB692700DCE8E1 /* IngredientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,15 +72,13 @@
 				3F48A1F41EC4CE8C00F6F926 /* Main.storyboard */,
 				3F6D4A0A1EC4D88300DCE8E1 /* SuggestionsViewController.swift */,
 				3F6D4A061EC4D81500DCE8E1 /* SettingsViewController.swift */,
-				3F6D4A021EC4D7BF00DCE8E1 /* IngredientsViewController.swift */,
 				3F6D4A001EC4D78300DCE8E1 /* RecipesViewController.swift */,
 				3F6D4A0C1EC4D90000DCE8E1 /* ProfileViewController.swift */,
 				3F48A1F71EC4CE8C00F6F926 /* Assets.xcassets */,
 				3F48A1F91EC4CE8C00F6F926 /* LaunchScreen.storyboard */,
 				3F48A1FC1EC4CE8C00F6F926 /* Info.plist */,
 				3F6D4A131EC4EFAD00DCE8E1 /* dbManager.swift */,
-				3F6D4A151EC62A9B00DCE8E1 /* SearchTextField.swift */,
-				3F6D4A171EC634B000DCE8E1 /* AutoCompleteTextField.swift */,
+				3F6D4A191ECB692700DCE8E1 /* IngredientsViewController.swift */,
 			);
 			path = FoodWiz;
 			sourceTree = "<group>";
@@ -170,14 +164,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F6D4A0D1EC4D90000DCE8E1 /* ProfileViewController.swift in Sources */,
-				3F6D4A031EC4D7BF00DCE8E1 /* IngredientsViewController.swift in Sources */,
 				3F48A1EF1EC4CE8C00F6F926 /* AppDelegate.swift in Sources */,
-				3F6D4A181EC634B000DCE8E1 /* AutoCompleteTextField.swift in Sources */,
 				3F6D4A071EC4D81500DCE8E1 /* SettingsViewController.swift in Sources */,
 				3F6D4A0B1EC4D88300DCE8E1 /* SuggestionsViewController.swift in Sources */,
 				3F6D4A011EC4D78300DCE8E1 /* RecipesViewController.swift in Sources */,
+				3F6D4A1A1ECB692700DCE8E1 /* IngredientsViewController.swift in Sources */,
 				3F6D4A141EC4EFAD00DCE8E1 /* dbManager.swift in Sources */,
-				3F6D4A161EC62A9B00DCE8E1 /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
