@@ -97,17 +97,143 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FoodWiz/IngredientsViewController.swift"
-            timestampString = "516307229.458003"
+            filePath = "FoodWiz/SearchIngredientsViewController.swift"
+            timestampString = "516732068.673646"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
-            landmarkName = "IngredientsViewController"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "SearchIngredientsViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodWiz.SearchIngredientsViewController.searchIngsTextFieldOutlet.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "FoodWiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Petar-PC/Projects/iOS%20Application/FoodWiz/FoodWiz/SearchIngredientsViewController.swift"
+                  timestampString = "516732069.885549"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodWiz.SearchIngredientsViewController.searchIngsTextFieldOutlet.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "FoodWiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Petar-PC/Projects/iOS%20Application/FoodWiz/FoodWiz/SearchIngredientsViewController.swift"
+                  timestampString = "516732069.88853"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodWiz.SearchIngredientsViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; FoodWiz.SearchIngredientsViewController"
+                  moduleName = "FoodWiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Petar-PC/Projects/iOS%20Application/FoodWiz/FoodWiz/SearchIngredientsViewController.swift"
+                  timestampString = "516732069.891069"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodWiz.SearchIngredientsViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;FoodWiz.SearchIngredientsViewController&gt;"
+                  moduleName = "FoodWiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Petar-PC/Projects/iOS%20Application/FoodWiz/FoodWiz/SearchIngredientsViewController.swift"
+                  timestampString = "516732069.893654"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodWiz/CheckBox.swift"
+            timestampString = "516732068.673646"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "isChecked"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodWiz.CheckBox.init (frame : __C.CGRect) -&gt; FoodWiz.CheckBox"
+                  moduleName = "FoodWiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Petar-PC/Projects/iOS%20Application/FoodWiz/FoodWiz/CheckBox.swift"
+                  timestampString = "516732069.900469"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodWiz.CheckBox.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;FoodWiz.CheckBox&gt;"
+                  moduleName = "FoodWiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Petar-PC/Projects/iOS%20Application/FoodWiz/FoodWiz/CheckBox.swift"
+                  timestampString = "516732069.902511"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "149">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodWiz/SearchIngredientsViewController.swift"
+            timestampString = "516732042.629054"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
