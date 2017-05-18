@@ -1,5 +1,5 @@
 //
-//  SearchIngredientsViewController.swift
+//  SearchIngsViewController.swift
 //  FoodWiz
 //
 //  Created by Petar Ojdrovic on 5/17/17.
@@ -8,26 +8,21 @@
 
 import UIKit
 
-class SearchIngredientsViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
-    
-    
-    // Temporary Data Storage
-    var masterIngredientsList: [String] = ["String", "Word", "cheese", "crocs", "crap", "local", "slocum", "hescut", "cut", "vlcut", "curry", "scuda", "locut", "locust", "coronary"]
-    var autoComplete: [String] = []
-    var selectedIngredients: [String] = []
-    
-    
-    
-    @IBOutlet weak var searchingIngsTableView: UITableView!
-    @IBOutlet weak var searchIngsTextFieldOutlet: UITextField!
+class SearchIngsViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
+    // Field for the input of text
+    @IBOutlet weak var textField: UITextField!
+    // Field for the table view
+    @IBOutlet weak var tableView: UITableView!
+    
+    var autoCompletePossibilities: [String] = ["Wand", "Wizzard", "Test"]
+    var autoComplete: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchIngsTextFieldOutlet.delegate = self
-        searchIngsTextFieldOutlet.layer.cornerRadius = 3
-        
-        searchingIngsTableView.delegate = self
+        textField.delegate = self
+        tableView.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -38,48 +33,51 @@ class SearchIngredientsViewController: UIViewController, UITextFieldDelegate, UI
     }
     
     
-    // Function to search for substrings within the larger string.
+    // Function to search for substrings of larger strings.
     func searchAutocompleteEntriesWithSubstring(_ substring: String) {
         autoComplete.removeAll(keepingCapacity: false)
         
-        for key in masterIngredientsList {
+        for key in autoCompletePossibilities {
             
             let myString:NSString! = key as NSString
             
-            //let substringRange :NSRange! = myString.range(of: substring)
-            
-            //if (substringRange.location  == 0) {
-            //  autoComplete.append(key)
-            //}
-            
             if(myString.range(of: substring).location != NSNotFound){
                 autoComplete.append(key)
-                //print(autoComplete)
             }
         }
         
-        searchingIngsTableView.reloadData()
+        tableView.reloadData()
     }
     
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-        let substring = (searchIngsTextFieldOutlet.text! as NSString).replacingCharacters(in: range, with: string)
-        //searchAutocompleteEntriesWithSubstring(substring)
+        let substring = (textField.text! as NSString).replacingCharacters(in: range, with: string)
         
         return true
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
+        let index = indexPath.row as Int
+        cell.textLabel!.text = autoComplete[index]
+        return cell
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return autoComplete.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("inside the did select row functioN!")
+        
+        let selectedCell: UITableViewCell = tableView.cellForRow(at: indexPath)!
+        
+        textField.text = selectedCell.textLabel!.text!
+        print(textField.text!)
+        
+        
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
-        return cell
+    func addToArrayFromString(string: String){
+        
     }
     
 
