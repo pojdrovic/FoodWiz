@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="HashIngs" representedClassName=".HashIngs" syncable="YES">
+        <attribute name="hashName" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ingredients" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="Recipes" representedClassName=".Recipes" syncable="YES">
+        <attribute name="allIngredientsAsArray" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="allIngredientsAsDictionary" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="dietaryRestriction" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hashedTitle" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ingredientsAsMetadata" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="instructions" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="recipeDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recipeMetaData" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HashIngs" positionX="-18" positionY="27" width="128" height="75"/>
+        <element name="Recipes" positionX="-45" positionY="0" width="128" height="195"/>
+    </elements>
+</model>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="HashIngs" representedClassName=".HashIngs" syncable="YES" codeGenerationType="class">
+        <attribute name="recipeHash" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="recipeIngredients" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Recipes" representedClassName=".Recipes" syncable="YES" codeGenerationType="class">
+        <attribute name="dietary" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hashedName" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ingredientMetaData" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ingredientsAsStringArray" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ingredientsAsStringDict" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="instructions" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="recipeDiscription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recipeMetaData" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HashIngs" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Recipes" positionX="-54" positionY="9" width="128" height="195"/>
+    </elements>
+</model>

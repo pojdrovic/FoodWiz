@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import CoreData
 
 class SuggestionsViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+    }
+    @IBAction func buttonClicked(_ sender: Any) {
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +25,7 @@ class SuggestionsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 

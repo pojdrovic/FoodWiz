@@ -11,17 +11,35 @@
 		3F48A1F61EC4CE8C00F6F926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F48A1F41EC4CE8C00F6F926 /* Main.storyboard */; };
 		3F48A1F81EC4CE8C00F6F926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F48A1F71EC4CE8C00F6F926 /* Assets.xcassets */; };
 		3F48A1FB1EC4CE8C00F6F926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F48A1F91EC4CE8C00F6F926 /* LaunchScreen.storyboard */; };
+		3F60858E1EF35AE2006E2250 /* fooodWizDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F60858C1EF35AE2006E2250 /* fooodWizDataModel.xcdatamodeld */; };
+		3F6085931EF35C0D006E2250 /* HashIngs+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60858F1EF35C0D006E2250 /* HashIngs+CoreDataClass.swift */; };
+		3F6085941EF35C0D006E2250 /* HashIngs+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6085901EF35C0D006E2250 /* HashIngs+CoreDataProperties.swift */; };
+		3F6085951EF35C0D006E2250 /* Recipes+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6085911EF35C0D006E2250 /* Recipes+CoreDataClass.swift */; };
+		3F6085961EF35C0D006E2250 /* Recipes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6085921EF35C0D006E2250 /* Recipes+CoreDataProperties.swift */; };
 		3F6D4A011EC4D78300DCE8E1 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A001EC4D78300DCE8E1 /* RecipesViewController.swift */; };
 		3F6D4A071EC4D81500DCE8E1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A061EC4D81500DCE8E1 /* SettingsViewController.swift */; };
 		3F6D4A0B1EC4D88300DCE8E1 /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A0A1EC4D88300DCE8E1 /* SuggestionsViewController.swift */; };
 		3F6D4A0D1EC4D90000DCE8E1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A0C1EC4D90000DCE8E1 /* ProfileViewController.swift */; };
-		3F6D4A101EC4EF3000DCE8E1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6D4A0F1EC4EF3000DCE8E1 /* libsqlite3.tbd */; };
-		3F6D4A141EC4EFAD00DCE8E1 /* dbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A131EC4EFAD00DCE8E1 /* dbManager.swift */; };
 		3F6D4A1A1ECB692700DCE8E1 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A191ECB692700DCE8E1 /* IngredientsViewController.swift */; };
 		3F6D4A1E1ECCB0CB00DCE8E1 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A1D1ECCB0CB00DCE8E1 /* CheckBox.swift */; };
-		3F6D4A201ECCC22600DCE8E1 /* SearchIngsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A1F1ECCC22600DCE8E1 /* SearchIngsViewController.swift */; };
 		3F6D4A221ECCC77900DCE8E1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A211ECCC77900DCE8E1 /* SearchViewController.swift */; };
 		3F6D4A241ECCD0D200DCE8E1 /* CustonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A231ECCD0D200DCE8E1 /* CustonTableViewCell.swift */; };
+		3F6D4A261EDE4FD500DCE8E1 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D4A251EDE4FD500DCE8E1 /* HelperFunctions.swift */; };
+		3F8C84151F01BCD20094D1B0 /* hashAndIngs.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3F8C84141F01BCD20094D1B0 /* hashAndIngs.sqlite */; };
+		3F8C84191F01BDC50094D1B0 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C84181F01BDC50094D1B0 /* DBManager.swift */; };
+		3F8C841B1F02DDEF0094D1B0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8C841A1F02DDEF0094D1B0 /* AVFoundation.framework */; };
+		3F8C841D1F02DE0F0094D1B0 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8C841C1F02DE0F0094D1B0 /* libsqlite3.0.tbd */; };
+		3F8C842B1F02DEAC0094D1B0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C84201F02DEAC0094D1B0 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3F8C842C1F02DEAC0094D1B0 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C84221F02DEAC0094D1B0 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3F8C842D1F02DEAC0094D1B0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C84241F02DEAC0094D1B0 /* FMDatabasePool.m */; };
+		3F8C842E1F02DEAC0094D1B0 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C84261F02DEAC0094D1B0 /* FMDatabaseQueue.m */; };
+		3F8C842F1F02DEAC0094D1B0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C84291F02DEAC0094D1B0 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3F8C84301F02DEAC0094D1B0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F8C842A1F02DEAC0094D1B0 /* Info.plist */; };
+		3F8C84311F02E60C0094D1B0 /* hashAndIngs.sqlite in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C84141F01BCD20094D1B0 /* hashAndIngs.sqlite */; };
+		3F8C84331F02EF590094D1B0 /* hashIngsTbl_Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C84321F02EF590094D1B0 /* hashIngsTbl_Info.swift */; };
+		3F8C84351F02F4650094D1B0 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C84341F02F4650094D1B0 /* Util.swift */; };
+		3F8C84371F0326C60094D1B0 /* FoodWizDB.db in Resources */ = {isa = PBXBuildFile; fileRef = 3F8C84361F0326C60094D1B0 /* FoodWizDB.db */; };
+		3F8C84391F03F0DE0094D1B0 /* recipe_info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C84381F03F0DE0094D1B0 /* recipe_info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,17 +49,42 @@
 		3F48A1F71EC4CE8C00F6F926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F48A1FA1EC4CE8C00F6F926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F48A1FC1EC4CE8C00F6F926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F60858D1EF35AE2006E2250 /* fooodWizDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fooodWizDataModel.xcdatamodel; sourceTree = "<group>"; };
+		3F60858F1EF35C0D006E2250 /* HashIngs+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HashIngs+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F6085901EF35C0D006E2250 /* HashIngs+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HashIngs+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F6085911EF35C0D006E2250 /* Recipes+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipes+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F6085921EF35C0D006E2250 /* Recipes+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipes+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F6D4A001EC4D78300DCE8E1 /* RecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		3F6D4A061EC4D81500DCE8E1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3F6D4A0A1EC4D88300DCE8E1 /* SuggestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
 		3F6D4A0C1EC4D90000DCE8E1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3F6D4A0F1EC4EF3000DCE8E1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		3F6D4A131EC4EFAD00DCE8E1 /* dbManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dbManager.swift; sourceTree = "<group>"; };
 		3F6D4A191ECB692700DCE8E1 /* IngredientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 		3F6D4A1D1ECCB0CB00DCE8E1 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
-		3F6D4A1F1ECCC22600DCE8E1 /* SearchIngsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchIngsViewController.swift; sourceTree = "<group>"; };
 		3F6D4A211ECCC77900DCE8E1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3F6D4A231ECCD0D200DCE8E1 /* CustonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustonTableViewCell.swift; sourceTree = "<group>"; };
+		3F6D4A251EDE4FD500DCE8E1 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		3F8C84141F01BCD20094D1B0 /* hashAndIngs.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = hashAndIngs.sqlite; sourceTree = "<group>"; };
+		3F8C84181F01BDC50094D1B0 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		3F8C841A1F02DDEF0094D1B0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3F8C841C1F02DE0F0094D1B0 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3F8C841F1F02DEAC0094D1B0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		3F8C84201F02DEAC0094D1B0 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		3F8C84211F02DEAC0094D1B0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		3F8C84221F02DEAC0094D1B0 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		3F8C84231F02DEAC0094D1B0 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		3F8C84241F02DEAC0094D1B0 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		3F8C84251F02DEAC0094D1B0 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		3F8C84261F02DEAC0094D1B0 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		3F8C84271F02DEAC0094D1B0 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		3F8C84281F02DEAC0094D1B0 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		3F8C84291F02DEAC0094D1B0 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		3F8C842A1F02DEAC0094D1B0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8C84321F02EF590094D1B0 /* hashIngsTbl_Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hashIngsTbl_Info.swift; sourceTree = "<group>"; };
+		3F8C84341F02F4650094D1B0 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		3F8C84361F0326C60094D1B0 /* FoodWizDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = FoodWizDB.db; sourceTree = "<group>"; };
+		3F8C84381F03F0DE0094D1B0 /* recipe_info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipe_info.swift; sourceTree = "<group>"; };
+		3FDBB2D11EEB3A8E00C1D1AA /* FoodWiz-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoodWiz-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F6D4A101EC4EF3000DCE8E1 /* libsqlite3.tbd in Frameworks */,
+				3F8C841D1F02DE0F0094D1B0 /* libsqlite3.0.tbd in Frameworks */,
+				3F8C841B1F02DDEF0094D1B0 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +103,18 @@
 		3F48A1E21EC4CE8C00F6F926 = {
 			isa = PBXGroup;
 			children = (
+				3F8C84361F0326C60094D1B0 /* FoodWizDB.db */,
+				3F8C841E1F02DEAC0094D1B0 /* fmdb */,
+				3F8C84181F01BDC50094D1B0 /* DBManager.swift */,
+				3F8C84381F03F0DE0094D1B0 /* recipe_info.swift */,
+				3F8C84341F02F4650094D1B0 /* Util.swift */,
+				3F8C84321F02EF590094D1B0 /* hashIngsTbl_Info.swift */,
+				3F8C84141F01BCD20094D1B0 /* hashAndIngs.sqlite */,
+				3F60858F1EF35C0D006E2250 /* HashIngs+CoreDataClass.swift */,
+				3F6085901EF35C0D006E2250 /* HashIngs+CoreDataProperties.swift */,
+				3F6085911EF35C0D006E2250 /* Recipes+CoreDataClass.swift */,
+				3F6085921EF35C0D006E2250 /* Recipes+CoreDataProperties.swift */,
+				3FDBB2D11EEB3A8E00C1D1AA /* FoodWiz-Bridging-Header.h */,
 				3F48A1ED1EC4CE8C00F6F926 /* FoodWiz */,
 				3F48A1EC1EC4CE8C00F6F926 /* Products */,
 				3F6D4A0E1EC4EF3000DCE8E1 /* Frameworks */,
@@ -78,19 +134,19 @@
 			children = (
 				3F48A1EE1EC4CE8C00F6F926 /* AppDelegate.swift */,
 				3F48A1F41EC4CE8C00F6F926 /* Main.storyboard */,
+				3F6D4A251EDE4FD500DCE8E1 /* HelperFunctions.swift */,
 				3F6D4A231ECCD0D200DCE8E1 /* CustonTableViewCell.swift */,
 				3F6D4A211ECCC77900DCE8E1 /* SearchViewController.swift */,
 				3F6D4A1D1ECCB0CB00DCE8E1 /* CheckBox.swift */,
 				3F6D4A0A1EC4D88300DCE8E1 /* SuggestionsViewController.swift */,
 				3F6D4A061EC4D81500DCE8E1 /* SettingsViewController.swift */,
+				3F60858C1EF35AE2006E2250 /* fooodWizDataModel.xcdatamodeld */,
 				3F6D4A001EC4D78300DCE8E1 /* RecipesViewController.swift */,
 				3F6D4A0C1EC4D90000DCE8E1 /* ProfileViewController.swift */,
 				3F48A1F71EC4CE8C00F6F926 /* Assets.xcassets */,
 				3F48A1F91EC4CE8C00F6F926 /* LaunchScreen.storyboard */,
 				3F48A1FC1EC4CE8C00F6F926 /* Info.plist */,
-				3F6D4A131EC4EFAD00DCE8E1 /* dbManager.swift */,
 				3F6D4A191ECB692700DCE8E1 /* IngredientsViewController.swift */,
-				3F6D4A1F1ECCC22600DCE8E1 /* SearchIngsViewController.swift */,
 			);
 			path = FoodWiz;
 			sourceTree = "<group>";
@@ -98,9 +154,30 @@
 		3F6D4A0E1EC4EF3000DCE8E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F8C841C1F02DE0F0094D1B0 /* libsqlite3.0.tbd */,
+				3F8C841A1F02DDEF0094D1B0 /* AVFoundation.framework */,
 				3F6D4A0F1EC4EF3000DCE8E1 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F8C841E1F02DEAC0094D1B0 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				3F8C841F1F02DEAC0094D1B0 /* FMDatabase.h */,
+				3F8C84201F02DEAC0094D1B0 /* FMDatabase.m */,
+				3F8C84211F02DEAC0094D1B0 /* FMDatabaseAdditions.h */,
+				3F8C84221F02DEAC0094D1B0 /* FMDatabaseAdditions.m */,
+				3F8C84231F02DEAC0094D1B0 /* FMDatabasePool.h */,
+				3F8C84241F02DEAC0094D1B0 /* FMDatabasePool.m */,
+				3F8C84251F02DEAC0094D1B0 /* FMDatabaseQueue.h */,
+				3F8C84261F02DEAC0094D1B0 /* FMDatabaseQueue.m */,
+				3F8C84271F02DEAC0094D1B0 /* FMDB.h */,
+				3F8C84281F02DEAC0094D1B0 /* FMResultSet.h */,
+				3F8C84291F02DEAC0094D1B0 /* FMResultSet.m */,
+				3F8C842A1F02DEAC0094D1B0 /* Info.plist */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +212,7 @@
 				TargetAttributes = {
 					3F48A1EA1EC4CE8C00F6F926 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -162,8 +240,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8C84371F0326C60094D1B0 /* FoodWizDB.db in Resources */,
 				3F48A1FB1EC4CE8C00F6F926 /* LaunchScreen.storyboard in Resources */,
 				3F48A1F81EC4CE8C00F6F926 /* Assets.xcassets in Resources */,
+				3F8C84151F01BCD20094D1B0 /* hashAndIngs.sqlite in Resources */,
+				3F8C84301F02DEAC0094D1B0 /* Info.plist in Resources */,
 				3F48A1F61EC4CE8C00F6F926 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,17 +256,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8C84311F02E60C0094D1B0 /* hashAndIngs.sqlite in Sources */,
 				3F6D4A221ECCC77900DCE8E1 /* SearchViewController.swift in Sources */,
 				3F6D4A0D1EC4D90000DCE8E1 /* ProfileViewController.swift in Sources */,
+				3F8C842D1F02DEAC0094D1B0 /* FMDatabasePool.m in Sources */,
 				3F6D4A1E1ECCB0CB00DCE8E1 /* CheckBox.swift in Sources */,
 				3F48A1EF1EC4CE8C00F6F926 /* AppDelegate.swift in Sources */,
+				3F8C842E1F02DEAC0094D1B0 /* FMDatabaseQueue.m in Sources */,
+				3F8C842B1F02DEAC0094D1B0 /* FMDatabase.m in Sources */,
+				3F8C842C1F02DEAC0094D1B0 /* FMDatabaseAdditions.m in Sources */,
 				3F6D4A241ECCD0D200DCE8E1 /* CustonTableViewCell.swift in Sources */,
+				3F8C842F1F02DEAC0094D1B0 /* FMResultSet.m in Sources */,
+				3F6085931EF35C0D006E2250 /* HashIngs+CoreDataClass.swift in Sources */,
+				3F8C84391F03F0DE0094D1B0 /* recipe_info.swift in Sources */,
+				3F60858E1EF35AE2006E2250 /* fooodWizDataModel.xcdatamodeld in Sources */,
+				3F6D4A261EDE4FD500DCE8E1 /* HelperFunctions.swift in Sources */,
 				3F6D4A071EC4D81500DCE8E1 /* SettingsViewController.swift in Sources */,
+				3F8C84191F01BDC50094D1B0 /* DBManager.swift in Sources */,
+				3F6085951EF35C0D006E2250 /* Recipes+CoreDataClass.swift in Sources */,
 				3F6D4A0B1EC4D88300DCE8E1 /* SuggestionsViewController.swift in Sources */,
-				3F6D4A201ECCC22600DCE8E1 /* SearchIngsViewController.swift in Sources */,
+				3F6085941EF35C0D006E2250 /* HashIngs+CoreDataProperties.swift in Sources */,
+				3F8C84351F02F4650094D1B0 /* Util.swift in Sources */,
 				3F6D4A011EC4D78300DCE8E1 /* RecipesViewController.swift in Sources */,
 				3F6D4A1A1ECB692700DCE8E1 /* IngredientsViewController.swift in Sources */,
-				3F6D4A141EC4EFAD00DCE8E1 /* dbManager.swift in Sources */,
+				3F6085961EF35C0D006E2250 /* Recipes+CoreDataProperties.swift in Sources */,
+				3F8C84331F02EF590094D1B0 /* hashIngsTbl_Info.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,10 +405,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FoodWiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ojdrovic.pojdrovic.FoodWiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodWiz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -322,10 +420,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FoodWiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ojdrovic.pojdrovic.FoodWiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodWiz-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -352,6 +452,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F60858C1EF35AE2006E2250 /* fooodWizDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F60858D1EF35AE2006E2250 /* fooodWizDataModel.xcdatamodel */,
+			);
+			currentVersion = 3F60858D1EF35AE2006E2250 /* fooodWizDataModel.xcdatamodel */;
+			path = fooodWizDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3F48A1E31EC4CE8C00F6F926 /* Project object */;
 }
