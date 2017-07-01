@@ -15,6 +15,7 @@ import UIKit
 // to create and store recipe objects.
 // These recipe objects are sourced from the data in the FoodWizDB.db sqlite file.
 class recipe_info: NSObject {
+    
     // The hashed name of the recipe
     var hashName:Int = Int()
     
@@ -30,19 +31,15 @@ class recipe_info: NSObject {
     // Dietary restrictions. 1 for vegeterian, 0 for not.
     var dietaryRestriction:Int = Int()
     
-    // Filename - this is the name of the file which was used to create the recipe object.
-    var fileName:String = String()
     
     // This is the list of metadata corresponding to the recipe. Number of servings, prep time, cook time.
     var recipeMetaData:[String] = [String]()
     
     // Description of the recipe. Short sentance describing the recipe.
-    var RecipeDescription:String = String()
+    var recipeDescription:String = String()
     
     // All the ingredients grouped together
     var allIngredients:[String] = [String]()
     
-    // All the ingredients broken down by subsection
-    var allIngredientsByType:[String:[String]] = [String:[String]]()
     
 }

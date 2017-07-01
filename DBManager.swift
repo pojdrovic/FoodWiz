@@ -32,6 +32,71 @@ class DBManager: NSObject {
         return (isInserted != nil)
     }
     
+    func getAllAvailableRecipes(ingredients: [Int]) -> NSMutableArray {
+        
+        // Open the connection to the database.
+        sharedInstance.database!.open()
+        
+        // get the set of owned ingredients
+        let setOfOwnedIngredients = Set(ingredients)
+        
+        let resultSet:FMResultSet! = sharedInstance.database!.executeQuery("SELECT * FROM recipes", withArgumentsIn: [0])
+        
+        var iterator = 0
+        
+        // Declaring the array of recipes to return.
+        let recpiesToReturn:NSMutableArray = NSMutableArray()
+        
+        // Build the objects if the result set is not empty.
+        if(resultSet != nil) {
+            // Iterate through all the items in the database.
+            while(resultSet.next()) {
+                iterator = iterator + 1
+                
+                // build the temporary recipe object.
+                let tempRecipe:recipe_info = recipe_info()
+                
+                // Now to build the various components of a recipe.
+                
+                // Title of Recipe
+                tempRecipe.recipeTitle = String(describing: resultSet.string(forColumn: "recipeName"))
+                
+                // Hash of Recipe
+                tempRecipe.hashName = Int(resultSet.int(forColumn: "recipeHashedName"))
+                
+                // Description of Recipe
+                tempRecipe.recipeDescription = String(describing: resultSet.string(forColumn: "recipeDescription"))
+                
+                // Recipe Meta Data
+                //tempRecipe.recipeMetaData =
+                
+                // Ingredient Meta Data
+                //tempRecipe.ingredientMetaData =
+                
+                // List of ingredients
+                //tempRecipe.allIngredients =
+                
+                // Recipe Instructions
+                //tempRecipe.instructions =
+                
+                // dietary restrictions
+                tempRecipe.dietaryRestriction = Int(resultSet.int(forColumn: "recipeDietary"))
+                
+                recpiesToReturn.add(tempRecipe)
+                
+            }
+            
+            sharedInstance.database!.close()
+            return recpiesToReturn
+            
+        }
+        
+        
+        // Final return of the available recipes.
+        return recpiesToReturn
+        
+    }
+    
     
     // function to get all hashes and ingredients.
     // Need to pass in the array of ingredients which you have.
