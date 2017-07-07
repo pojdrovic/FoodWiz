@@ -13,7 +13,7 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionlabel: UILabel!
     @IBOutlet var ingsTableView: UITableView!
-    @IBOutlet var instructionsCell: UITableView!
+    @IBOutlet var instrTableView: UITableView!
     
     var dbMan = DBManager()
     
@@ -41,9 +41,14 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         if tableView == self.ingsTableView {
             cell = tableView.dequeueReusableCell(withIdentifier: "ingCell", for: indexPath)
             cell?.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-
             cell!.textLabel!.text = currentRecipe.allIngredients[indexPath.row]
         }
+        
+        if tableView == self.instrTableView {
+            cell = tableView.dequeueReusableCell(withIdentifier: "instrCell", for: indexPath)
+            cell!.textLabel!.text = currentRecipe.instructions[indexPath.row]
+        }
+        
         
         return cell!
     }
@@ -56,6 +61,10 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         
         if tableView == self.ingsTableView {
             count = currentRecipe.allIngredients.count
+        }
+        
+        if tableView == self.instrTableView {
+            count = currentRecipe.instructions.count
         }
         
         return count!

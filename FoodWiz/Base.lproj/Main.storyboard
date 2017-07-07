@@ -146,30 +146,34 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wb6-IZ-P2I">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lkq-nm-T8s">
                                                 <rect key="frame" x="8" y="276" width="359" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="128" id="VR8-cC-nSF"/>
+                                                    <constraint firstAttribute="height" constant="128" id="dL0-64-vEB"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="instructionCell" id="a8m-ai-5YF">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="instrCell" id="ajc-hc-7IG">
                                                         <rect key="frame" x="0.0" y="28" width="359" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
-                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a8m-ai-5YF" id="ufP-sb-ThQ">
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ajc-hc-7IG" id="l9S-4h-SA4">
                                                             <rect key="frame" x="0.0" y="0.0" width="359" height="43"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                 </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="TVh-32-9fv" id="pG9-pL-rsc"/>
+                                                    <outlet property="delegate" destination="TVh-32-9fv" id="yp1-Gg-LA2"/>
+                                                </connections>
                                             </tableView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="4d2-Oe-xrA" firstAttribute="leading" secondItem="dlc-yp-NkZ" secondAttribute="leading" constant="8" id="1lM-yj-Uku"/>
                                             <constraint firstAttribute="height" constant="639" id="6at-Rf-Cnh"/>
+                                            <constraint firstItem="lkq-nm-T8s" firstAttribute="top" secondItem="qfu-PA-0NP" secondAttribute="bottom" constant="8" id="BBv-lP-odr"/>
                                             <constraint firstItem="Iwt-nI-8Jc" firstAttribute="leading" secondItem="dlc-yp-NkZ" secondAttribute="leading" constant="8" id="DKj-VG-qO1"/>
-                                            <constraint firstAttribute="trailing" secondItem="wb6-IZ-P2I" secondAttribute="trailing" constant="8" id="DrX-mD-DGE"/>
                                             <constraint firstAttribute="trailing" secondItem="Trh-Kp-45T" secondAttribute="trailing" constant="8" id="Gly-el-KRt"/>
                                             <constraint firstItem="Trh-Kp-45T" firstAttribute="leading" secondItem="dlc-yp-NkZ" secondAttribute="leading" constant="8" id="GrD-gU-V3h"/>
                                             <constraint firstItem="4d2-Oe-xrA" firstAttribute="top" secondItem="LZP-bl-IId" secondAttribute="bottom" constant="8" id="QoL-6C-QcW"/>
@@ -178,13 +182,13 @@
                                             <constraint firstAttribute="trailing" secondItem="4d2-Oe-xrA" secondAttribute="trailing" constant="8" id="SSY-ZG-8jx"/>
                                             <constraint firstItem="Trh-Kp-45T" firstAttribute="top" secondItem="4d2-Oe-xrA" secondAttribute="bottom" constant="16" id="UUR-96-BFP"/>
                                             <constraint firstItem="Trh-Kp-45T" firstAttribute="top" secondItem="4d2-Oe-xrA" secondAttribute="bottom" constant="16" id="WKt-bV-ZBn"/>
+                                            <constraint firstItem="lkq-nm-T8s" firstAttribute="leading" secondItem="dlc-yp-NkZ" secondAttribute="leading" constant="8" id="WxF-N0-hBC"/>
                                             <constraint firstAttribute="trailing" secondItem="LZP-bl-IId" secondAttribute="trailing" constant="8" id="Y9Y-is-Euz"/>
                                             <constraint firstItem="LZP-bl-IId" firstAttribute="top" secondItem="dlc-yp-NkZ" secondAttribute="top" constant="8" id="aub-mp-5RQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="lkq-nm-T8s" secondAttribute="trailing" constant="8" id="bOM-GZ-sQB"/>
                                             <constraint firstItem="qfu-PA-0NP" firstAttribute="top" secondItem="Iwt-nI-8Jc" secondAttribute="bottom" constant="16" id="gto-SO-7em"/>
                                             <constraint firstItem="qfu-PA-0NP" firstAttribute="leading" secondItem="dlc-yp-NkZ" secondAttribute="leading" constant="8" id="lqT-wB-IqU"/>
                                             <constraint firstItem="qfu-PA-0NP" firstAttribute="top" secondItem="Iwt-nI-8Jc" secondAttribute="bottom" constant="16" id="p9v-7x-sZk"/>
-                                            <constraint firstItem="wb6-IZ-P2I" firstAttribute="top" secondItem="qfu-PA-0NP" secondAttribute="bottom" constant="8" id="qvw-hk-3ch"/>
-                                            <constraint firstItem="wb6-IZ-P2I" firstAttribute="leading" secondItem="dlc-yp-NkZ" secondAttribute="leading" constant="8" id="sIl-LH-yJL"/>
                                             <constraint firstAttribute="trailing" secondItem="qfu-PA-0NP" secondAttribute="trailing" constant="8" id="toy-VJ-4hY"/>
                                             <constraint firstItem="Iwt-nI-8Jc" firstAttribute="top" secondItem="Trh-Kp-45T" secondAttribute="bottom" constant="8" id="weU-ER-g4i"/>
                                             <constraint firstAttribute="trailing" secondItem="Iwt-nI-8Jc" secondAttribute="trailing" constant="8" id="wml-xp-SEO"/>
@@ -213,7 +217,7 @@
                     <connections>
                         <outlet property="descriptionlabel" destination="4d2-Oe-xrA" id="z1S-fB-vb9"/>
                         <outlet property="ingsTableView" destination="Iwt-nI-8Jc" id="r3n-c1-F1h"/>
-                        <outlet property="instructionsCell" destination="wb6-IZ-P2I" id="rlI-Rr-ezv"/>
+                        <outlet property="instrTableView" destination="lkq-nm-T8s" id="M7e-se-aUj"/>
                         <outlet property="titleLabel" destination="LZP-bl-IId" id="zDx-qH-1bY"/>
                     </connections>
                 </viewController>
