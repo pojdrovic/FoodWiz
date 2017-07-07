@@ -27,6 +27,7 @@ class RecipesViewController: UIViewController, UITableViewDelegate, UITableViewD
     var database: FMDatabase!
     
     var getAllData = NSMutableArray()
+    var recipeObjects:[recipe_info] = NSMutableArray() as! [recipe_info]
     
     
     
@@ -39,11 +40,21 @@ class RecipesViewController: UIViewController, UITableViewDelegate, UITableViewD
         let documentsDirectory = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString) as String
         pathToDatabase = documentsDirectory.appending("/\(databaseFileName)")
         var storedIngredients = UserDefaults.standard.object(forKey: "ingredients") as! [Int]
-        getAllData = DBManager.getInstance().getAllHashIngs(ingredients: storedIngredients)
+        //getAllData = DBManager.getInstance().getAllHashIngs(ingredients: storedIngredients)
+        recipeObjects = DBManager.getInstance().getAllAvailableRecipes(ingredients: storedIngredients) as! [recipe_info]
+        self.printRecipes()
         populateListOfRecipes()
         tableView.reloadData()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func printRecipes(){
+        for element in recipeObjects{
+            var tempTitle = element.recipeTitle as! String
+            print(tempTitle)
+            //arrayOfNames.append(tempTitle)
+        }
     }
     
     
@@ -51,19 +62,37 @@ class RecipesViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //populateListOfRecipes()
-        print("got inside cellForRowAt!")
+        //print("got inside cellForRowAt!")
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
         cell.layoutMargins = UIEdgeInsets.zero
         let index = indexPath.row as Int
-        cell.textLabel!.text = String(arrayOfNames[index])
+        var tempRecipe:recipe_info = recipeObjects[index] as! recipe_info
+        var textLabel = tempRecipe.recipeTitle
+        //cell.textLabel!.text = String(recipeObjects[index].ti)
+        //cell.textLabel!.text = String(arrayOfNames[index])
+        cell.textLabel!.text = textLabel
         return cell
-        
 
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index = indexPath.row as Int
+        var selectedRecipe:recipe_info = recipeObjects[index] as! recipe_info
+        var hashOfRecipe = selectedRecipe.hashName
+        UserDefaults.standard.set(hashOfRecipe, forKey: "selectedRecipe")
+        //UserDefaults.standard.set(selectedRecipe, forKey: "activeRecipe")
+        var selectedRecipeHash = UserDefaults.standard.object(forKey: "selectedRecipe") as! Int
+        print(selectedRecipeHash)
+
+        print("selectedRow!")
+    }
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //print("num of rows called!")
-        return arrayOfNames.count
+        //return arrayOfNames.count
+        return recipeObjects.count
     }
 
     override func didReceiveMemoryWarning() {

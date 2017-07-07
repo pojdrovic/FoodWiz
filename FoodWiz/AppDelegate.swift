@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //let persistantDictOfIngredients = UserDefaults.standard
         let standardDefaults = UserDefaults.standard
         standardDefaults.register(defaults: ["ingredients":[]])
+        standardDefaults.register(defaults: ["selectedRecipe" : Int()])
         
         //Util.copyFile(fileName: "hashAndIngs.sqlite")
         Util.copyFile(fileName: "FoodWizDB.db")

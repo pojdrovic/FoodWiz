@@ -32,7 +32,60 @@ class DBManager: NSObject {
         return (isInserted != nil)
     }
     
+    func getRecipeFromHash(hashName: Int) -> recipe_info {
+        print("inside get singular recipe")
+        
+        let tempRecipe:recipe_info = recipe_info()
+        
+        sharedInstance.database!.open()
+        let resultSet:FMResultSet! = sharedInstance.database!.executeQuery("SELECT * FROM recipes WHERE recipeHashedName = \(String(hashName))", withArgumentsIn: [0])
+        
+        if(resultSet != nil) {
+            while(resultSet.next()){
+                //let tempRecipe:recipe_info = recipe_info()
+                
+                // Title of Recipe
+                tempRecipe.recipeTitle = String(describing: resultSet.string(forColumn: "recipeName"))
+                print(tempRecipe.recipeTitle)
+                //print(tempRecipe.recipeTitle)
+                
+                // Hash of Recipe
+                tempRecipe.hashName = Int(resultSet.int(forColumn: "recipeHashedName"))
+                
+                // Description of Recipe
+                tempRecipe.recipeDescription = String(describing: resultSet.string(forColumn: "recipeDescription"))
+                
+                // Recipe Meta Data
+                let metaDataString = String(describing: resultSet.string(forColumn: "recipeMetaData"))
+                let metaDataArray = metaDataString.components(separatedBy: "||")
+                tempRecipe.recipeMetaData = metaDataArray
+                
+                // List of ingredients
+                let ingredientsString = String(describing: resultSet.string(forColumn: "recipeIngredients"))
+                let ingredientsArray = ingredientsString.components(separatedBy: "||")
+                tempRecipe.allIngredients = ingredientsArray
+                
+                // Recipe Instructions
+                let instructionsString = String(describing: resultSet.string(forColumn: "recipeInstructions"))
+                let instructionsArray = instructionsString.components(separatedBy: "||")
+                tempRecipe.instructions = instructionsArray
+                
+                // dietary restrictions
+                tempRecipe.dietaryRestriction = Int(resultSet.int(forColumn: "recipeDietary"))
+                
+            }
+            
+            sharedInstance.database!.close()
+            //return tempRecipe
+        }
+        
+        return tempRecipe
+        
+        
+    }
+    
     func getAllAvailableRecipes(ingredients: [Int]) -> NSMutableArray {
+        print("Inside of get all recipes")
         
         // Open the connection to the database.
         sharedInstance.database!.open()
@@ -60,6 +113,7 @@ class DBManager: NSObject {
                 
                 // Title of Recipe
                 tempRecipe.recipeTitle = String(describing: resultSet.string(forColumn: "recipeName"))
+                //print(tempRecipe.recipeTitle)
                 
                 // Hash of Recipe
                 tempRecipe.hashName = Int(resultSet.int(forColumn: "recipeHashedName"))
@@ -68,21 +122,46 @@ class DBManager: NSObject {
                 tempRecipe.recipeDescription = String(describing: resultSet.string(forColumn: "recipeDescription"))
                 
                 // Recipe Meta Data
-                //tempRecipe.recipeMetaData =
-                
-                // Ingredient Meta Data
-                //tempRecipe.ingredientMetaData =
-                
+                let metaDataString = String(describing: resultSet.string(forColumn: "recipeMetaData"))
+                let metaDataArray = metaDataString.components(separatedBy: "||")
+                tempRecipe.recipeMetaData = metaDataArray
+
                 // List of ingredients
-                //tempRecipe.allIngredients =
+                let ingredientsString = String(describing: resultSet.string(forColumn: "recipeIngredients"))
+                let ingredientsArray = ingredientsString.components(separatedBy: "||")
+                tempRecipe.allIngredients = ingredientsArray
                 
                 // Recipe Instructions
-                //tempRecipe.instructions =
+                let instructionsString = String(describing: resultSet.string(forColumn: "recipeInstructions"))
+                let instructionsArray = instructionsString.components(separatedBy: "||")
+                tempRecipe.instructions = instructionsArray
                 
                 // dietary restrictions
                 tempRecipe.dietaryRestriction = Int(resultSet.int(forColumn: "recipeDietary"))
                 
-                recpiesToReturn.add(tempRecipe)
+                // Ingredient Meta Data
+                let tempStringOfIngredints = String(describing: resultSet.string(forColumn: "recipeIngredientMetaData"))
+                let values = tempStringOfIngredints.components(separatedBy: "||").flatMap { Int($0.trimmingCharacters(in: .whitespaces)) }
+                if values.count == 0 {
+                    //print("Thing is too small!")
+                    //print(tempStringOfIngredints)
+                } else {
+                    tempRecipe.ingredientMetaData = values
+                    let setOfRecipeIngredients = Set(tempRecipe.ingredientMetaData)
+                    if setOfRecipeIngredients.isSubset(of: setOfOwnedIngredients){
+                        //print("Found matching recipe!")
+                        //print(setOfOwnedIngredients)
+                        //print(setOfRecipeIngredients)
+                        //print(item.hashName)
+                        recpiesToReturn.add(tempRecipe)
+                    } else {
+                        //print("not found!")
+                    }
+                }
+                
+                //tempRecipe.ingredientMetaData =
+                
+                //recpiesToReturn.add(tempRecipe)
                 
             }
             
